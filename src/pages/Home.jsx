@@ -2,6 +2,7 @@ import React from 'react';
 import Typewriter from "typewriter-effect";
 import CursorTrail from '../components/CursorTrail';
 import Resume from '../assets/Resume.pdf'
+import Mine from '../assets/Mine.jpeg'
 
 
 const Home = () => {
@@ -9,6 +10,11 @@ const Home = () => {
     <section className="h-[calc(100vh-58px)] bg-navy md:h-screen md:grid md:grid-cols-2 md:justify-center md:content-center md:pl-10 lg:pt-20" id='home'>
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
         <CursorTrail />
+      </div>
+      <div className='hidden md:flex md:justify-center md:items-center'>
+        <div className='w-2/5 rounded-3xl' style={{background: "linear-gradient(45deg, transparent, #64ffda, transparent)"}}>
+        <img src={Mine} className="rounded-3xl overflow-hidden -rotate-12 hover:rotate-0" style={{transition: 'all 400ms ease'}}/>
+        </div>
       </div>
       <div className="flex flex-col h-screen text-center justify-evenly">
         <div className=''>
@@ -40,9 +46,6 @@ const Home = () => {
             Let's talk!
           </button>
         </div>
-      </div>
-      <div className='hidden md:z-9 lg:-mt-10 md:flex md:justify-center md:items-center'>
-        <h1>Something Here</h1>
       </div>
     </section>
   )
