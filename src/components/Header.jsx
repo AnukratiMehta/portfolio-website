@@ -78,28 +78,6 @@ const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state w
           <a href="#contact" className="md:text-lg md:px-4 md:pr-10 text-lightest-slate hover:text-green">Contact</a>          </li>
         </ul>
       </nav>
-      <style>{`
-      .hideMenuNav {
-        display: none;
-      }
-      .showMenuNav {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: auto;
-        top: 0;
-        left: 0;
-        background: #112240;
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 10px;
-        box-shadow: 0 10px 30px -10px  rgba(2,12,27,0.7);
-        border-radius: 5px 0
-      }
-    `}</style>
     </div>
   );
 }
