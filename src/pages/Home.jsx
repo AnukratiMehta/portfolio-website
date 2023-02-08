@@ -24,17 +24,17 @@ const Home = () => {
                 }}
               />
             </span>
-            <span class="inline-block ml-1">Developer</span>
+            <span className="inline-block ml-1">Developer</span>
           </h1>
         </div>
-        <div class='space-y-9 flex flex-col items-center md:flex md:flex-row md:justify-evenly md:space-y-0'>
-          <button type="button" class="lg:px-4 lg:text-xl py-2 px-4 md:px-2 w-fit text-lg text-green border border-green rounded-md hover:text-green hover:bg-lightest-navy transition-all ease-in-out duration-200 cursor-pointer text-center"
+        <div className='space-y-9 flex flex-col items-center md:flex md:flex-row md:justify-evenly md:space-y-0'>
+          <button type="button" className="lg:px-4 lg:text-xl py-2 px-4 md:px-2 w-fit text-lg text-green border border-green rounded-md hover:text-green hover:bg-lightest-navy transition-all ease-in-out duration-200 cursor-pointer text-center"
             onClick={() => window.open(Resume, "_blank")}>
             Resume
           </button>
           <button
             type="button"
-            class="lg:px-4 lg:text-xl py-2 px-4 w-fit md:px-2 text-lg text-green border border-green rounded-md hover:text-green hover:bg-lightest-navy transition-all ease-in-out duration-200 cursor-pointer text-center"
+            className="lg:px-4 lg:text-xl py-2 px-4 w-fit md:px-2 text-lg text-green border border-green rounded-md hover:text-green hover:bg-lightest-navy transition-all ease-in-out duration-200 cursor-pointer text-center"
             onClick={() => window.location.href = "#contact"}
           >
             Let's talk!

@@ -5,15 +5,15 @@ import "react-jigsaw-puzzle/lib/jigsaw-puzzle.css";
 import img from "../assets/Me.jpeg";
 
 function Jigsaw() {
-	const [text, setText] = useState("Unpuzzle the pieces!");
+	const [text, setText] = useState("Piece me together!");
 	
 	const set = () => {
-		setText("Congratulations!");
+		setText("Nice to meet you! Let's catch up in person now?");
 	};
 	
 	return (
 		<div className="jigsaw-container">
-			<h2 className={`tag ${text === "Congratulations!" ? "congrats" : ""}`}>{text}</h2>
+			<h2 className={`tag ${text === "Piece me together!" ? "" : "congrats"}`}>{text}</h2>
 			<JigsawPuzzle
 				imageSrc={img}
 				rows={3}

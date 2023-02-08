@@ -20,7 +20,7 @@ const Skills = () => {
         <Kaleidoscope />
       </div>
       <div className='h-screen lg:w-1/2 flex flex-col justify-center items-center lg:mr-10 lg:pr-10 lg:-mt-10'>
-        <h1 className='lg:-mt-10 mb-8 text-3xl lg:text-center text-lightest-slate'>Skills</h1>
+        <h1 className='lg:-mt-10 mb-8 text-3xl lg:text-center text-lightest-slate'>Toolkit</h1>
         <div className='grid grid-cols-5 gap-10 md:gap-12 lg:gap-10'>
         <a href='https://www.javascript.com/' target="_blank" rel="noreferrer" data-hover="JavaScript" className="hovertext icon hover:scale-110"><SiJavascript className='text-green text-4xl '/></a>
         <a href='https://html.com/' data-hover="HTML" className="hovertext icon hover:scale-110"><SiHtml5 className='text-green text-4xl '/></a>

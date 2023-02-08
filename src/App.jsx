@@ -9,9 +9,6 @@ import Skills from './pages/Skills';
 import './App.css';
 import Socials from './components/Socials';
 
-
-
-
 const App = () => {
   return (
     <>
