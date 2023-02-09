@@ -7,13 +7,13 @@ import Mine from '../assets/Mine.jpeg'
 
 const Home = () => {
   return (
-    <section className="h-[calc(100vh-58px)] bg-navy md:h-screen md:grid md:grid-cols-2 md:justify-center md:content-center md:pl-10 lg:pt-20" id='home'>
+    <section className="flex flex-col bg-navy md:h-screen md:grid md:grid-cols-2 md:justify-center md:content-center md:pl-10" id='home'>
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
         <CursorTrail />
       </div>
-      <div className='hidden md:flex md:justify-center md:items-center'>
-        <div className='w-2/5 rounded-3xl' style={{background: "linear-gradient(45deg, transparent, #64ffda, transparent)"}}>
-        <img src={Mine} className="rounded-3xl overflow-hidden -rotate-12 hover:rotate-0" style={{transition: 'all 400ms ease'}}/>
+      <div className='hidden md:flex md:justify-center md:items-center md:mb-20'>
+        <div className='lg:w-2/5 md:w-1/2 rounded-3xl' style={{ background: "linear-gradient(45deg, transparent, #64ffda, transparent)" }}>
+          <img src={Mine} alt="Anukrati Mehta" className="rounded-3xl overflow-hidden -rotate-12 hover:rotate-0" style={{ transition: 'all 400ms ease' }} />
         </div>
       </div>
       <div className="flex flex-col h-screen text-center justify-evenly">
@@ -46,6 +46,12 @@ const Home = () => {
             Let's talk!
           </button>
         </div>
+        </div>
+        <div className='md:hidden h-screen flex flex-col justify-evenly items-center'>
+        <div className='w-1/2 rounded-3xl' style={{background: "linear-gradient(45deg, transparent, #64ffda, transparent)"}}>
+        <img src={Mine} alt="Anukrati Mehta" className="rounded-3xl overflow-hidden -rotate-12 hover:rotate-0" style={{transition: 'all 400ms ease'}}/>
+        </div>
+        <h1 className='md:hidden text-2xl text-lightest-slate'>Building the web, one pixel at a time.</h1>
       </div>
     </section>
   )
