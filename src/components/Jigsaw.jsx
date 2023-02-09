@@ -6,11 +6,11 @@ import img from "../assets/Me.jpeg";
 
 function Jigsaw() {
 	const [text, setText] = useState("Piece me together!");
-	
+
 	const set = () => {
 		setText("Nice to meet you! Let's catch up in person now?");
 	};
-	
+
 	return (
 		<div className="jigsaw-container">
 			<h2 className={`tag ${text === "Piece me together!" ? "" : "congrats"}`}>{text}</h2>

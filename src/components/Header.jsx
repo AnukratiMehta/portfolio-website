@@ -14,11 +14,11 @@ const Header = () => {
     });
   }, []);
 
-const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+  const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
   return (
     <div className={`flex items-center justify-between bg-navy px-2 py-3 z-20 fixed top-0 w-full ${headerClass}`}>
-<a href="#home" className="text-xl px-2 hover:scale-110 md:text-xl md:px-4 md:py-2 text-green">Anukrati</a>
+      <a href="#home" className="text-xl px-2 hover:scale-110 md:text-xl md:px-4 md:py-2 text-green">Anukrati</a>
       <nav>
         <section className="MOBILE-MENU flex md:hidden">
           <div
@@ -66,16 +66,16 @@ const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state w
         </section>
         <ul className="DESKTOP-MENU hidden md:flex">
           <li>
-      <a href="#about" className="md:text-lg md:px-4 text-lightest-slate hover:text-green">About</a>
+            <a href="#about" className="md:text-lg md:px-4 text-lightest-slate hover:text-green">About</a>
           </li>
           <li>
-          <a href="#skills" className="md:text-lg md:px-4 text-lightest-slate hover:text-green">Skills</a>
+            <a href="#skills" className="md:text-lg md:px-4 text-lightest-slate hover:text-green">Skills</a>
           </li>
           <li>
-          <a href="#projects" className="md:text-lg md:px-4 text-lightest-slate hover:text-green">Projects</a>
+            <a href="#projects" className="md:text-lg md:px-4 text-lightest-slate hover:text-green">Projects</a>
           </li>
           <li>
-          <a href="#contact" className="md:text-lg md:px-4 md:pr-10 text-lightest-slate hover:text-green">Contact</a>          </li>
+            <a href="#contact" className="md:text-lg md:px-4 md:pr-10 text-lightest-slate hover:text-green">Contact</a>          </li>
         </ul>
       </nav>
     </div>

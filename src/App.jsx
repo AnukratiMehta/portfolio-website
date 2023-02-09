@@ -12,14 +12,14 @@ import Socials from './components/Socials';
 const App = () => {
   return (
     <>
-    <Header />
-    <Socials />
-    <Home />
-    <About />
-    <Skills />
-    <Projects />
-    <Contact />
-    <Footer />
+      <Header />
+      <Socials />
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
   )
 }

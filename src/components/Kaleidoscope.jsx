@@ -20,7 +20,7 @@ function Kaleidoscope() {
       p5Instance.clear();
     }
   }
-  
+
 
   function handlePink() {
     setColor("#f57dff");
@@ -83,7 +83,7 @@ function Kaleidoscope() {
   return (
     <div className='flex flex-col'>
       <div className='my-5' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <h1 className='text-2xl text-center text-lightest-slate ml-5'>Draw on Me ↓</h1>
+        <h1 className='text-2xl text-center text-lightest-slate ml-5'>Draw on Me ↓</h1>
         <button onClick={handleReset} className="text-green border border-green rounded-md text-lg px-5 py-2.5 hover:text-green hover:bg-lightest-navy transition-all ease-in-out duration-200 cursor-pointer text-center mx-8">Reset</button>
       </div>
       <div className="kaleidoscope-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

@@ -54,8 +54,8 @@ const Projects = () => {
                 <h1 className='text-center lg:text-2xl text-lg py-5 text-lightest-slate'>{title}</h1>
                 <p className='text-slate lg:text-lg text-sm px-5'>{info}</p>
                 <div className='flex flex-row justify-end p-2'>
-                <a className="text-lightest-slate hover:text-green text-md m-2 lg:text-xl lg:m-3" href={github} target="_blank" rel="noreferrer"><FiGithub /></a>
-                <a className="text-lightest-slate hover:text-green text-md lg:text-xl lg:m-3 m-2" href={demo} target="_blank" rel="noreferrer"><MdOutlineOpenInNew /></a>
+                  <a className="text-lightest-slate hover:text-green text-md m-2 lg:text-xl lg:m-3" href={github} target="_blank" rel="noreferrer"><FiGithub /></a>
+                  <a className="text-lightest-slate hover:text-green text-md lg:text-xl lg:m-3 m-2" href={demo} target="_blank" rel="noreferrer"><MdOutlineOpenInNew /></a>
                 </div>
               </div>
               <a href={demo} target="_blank" rel="noreferrer" className='w-1/2 h-fit lg:w-auto lg:h-auto md:flex md:justify-center md:items-center'>
@@ -64,7 +64,7 @@ const Projects = () => {
 
             </div>
 
-            
+
 
           )
         })
