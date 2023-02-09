@@ -16,11 +16,11 @@ const Skills = () => {
 
   return (
     <section id='skills' className='bg-navy lg:h-screen lg:flex lg:items-center lg:pt-12'>
-      <div className='h-screen lg:w-1/2 flex justify-center items-center'>
+      <div className='hidden lg:h-screen lg:w-1/2 lg:flex lg:justify-center lg:items-center'>
         <Kaleidoscope />
       </div>
-      <div className='h-screen lg:w-1/2 flex flex-col justify-center items-center lg:mr-10 lg:pr-10 lg:-mt-10'>
-        <h1 className='lg:-mt-10 mb-8 text-3xl lg:text-center text-lightest-slate'>Toolkit</h1>
+      <div className='h-screen lg:w-1/2 flex flex-col lg:justify-center justify-evenly items-center lg:mr-10 lg:pr-10 lg:-mt-10'>
+        <h1 className='lg:-mt-10 lg:mb-8 text-3xl lg:text-center text-lightest-slate'>Toolkit</h1>
         <div className='grid grid-cols-5 gap-10 md:gap-12 lg:gap-10'>
           <a href='https://www.javascript.com/' target="_blank" rel="noreferrer" data-hover="JavaScript" className="hovertext icon hover:scale-110"><SiJavascript className='text-green text-4xl ' /></a>
           <a href='https://html.com/' data-hover="HTML" className="hovertext icon hover:scale-110"><SiHtml5 className='text-green text-4xl ' /></a>
@@ -45,6 +45,10 @@ const Skills = () => {
           <a href='https://www.postgresql.org/' data-hover="PostgreSQL" className="hovertext icon hover:scale-110"><SiPostgresql className='text-green text-4xl ' /></a>
           <a href='https://www.mysql.com/' data-hover="MySQL" className="hovertext icon hover:scale-110"><SiMysql className='text-green text-4xl ' /></a>
         </div>
+        <h1 className='lg:hidden text-xl text-lightest-slate px-[5%] md:px-[10%] text-center'>Experience some of these skills in action through an interactive display, just a scroll away.</h1>
+      </div>
+      <div className='h-screen flex justify-center items-center lg:hidden'>
+        <Kaleidoscope />
       </div>
     </section>
   )

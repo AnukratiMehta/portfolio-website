@@ -14,7 +14,7 @@ const Socials = () => {
       <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/anukrati-mehta/" className="my-3">
         <FiLinkedin className="text-xl hover:-translate-y-1 text-light-slate hover:text-green" />
       </a>
-      <a target="_blank" rel="noreferrer" href="https://wa.me/+918746937402?text=Hey%20Anukrati!%20I%20saw%20your%20developer%20portfolio." className="my-3">
+      <a target="_blank" rel="noreferrer" href="https://wa.me/+917063935809?text=Hey%20Anukrati!%20I%20saw%20your%20developer%20portfolio." className="my-3">
         <ImWhatsapp className="text-l hover:-translate-y-1 text-light-slate hover:text-green" />
       </a>
       <a href="mailto:anukratimehta@gmail.com" className="my-3 pb-20">

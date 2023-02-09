@@ -8,7 +8,7 @@ function Jigsaw() {
 	const [text, setText] = useState("Piece me together!");
 
 	const set = () => {
-		setText("Nice to meet you! Let's catch up in person now?");
+		setText("Nice to meet you! Let's catch up in person now.");
 	};
 
 	return (
