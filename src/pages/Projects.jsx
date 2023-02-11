@@ -3,6 +3,7 @@ import IMG1 from '../assets/Calculator.png'
 import IMG2 from '../assets/Tic-Tac-Toe.png'
 import IMG3 from '../assets/SQL-Tableau-Visualization.png'
 import IMG4 from '../assets/Dall-E.png'
+import IMG5 from '../assets/Hear-Hear.png'
 
 
 import { FiGithub } from 'react-icons/fi'
@@ -40,17 +41,25 @@ const data = [
     info: "The website allows users to generate unique images based on textual descriptions, leveraging the power of DALL-E API. The user inputs are stored in a MongoDB database, and the generated images are hosted on Cloudinary for efficient management and retrieval. This project demonstrates my ability to work with AI APIs, build scalable databases, and implement efficient image management systems, providing a comprehensive showcase of my skills in full-stack web development.",
     github: "https://github.com/AnukratiMehta/ai-image-generation.git",
     demo: "https://anukratimehta.github.io/ai-image-generation/"
+  },
+  {
+    id: 5,
+    image: IMG5,
+    title: "Music App",
+    info: "The Hear, Hear! App is a dynamic platform for music discovery and listening, integrating the free Shazam API to fetch music information. With features like a music player, related songs, and songs by a particular artist, users can easily explore and enjoy their favorite music. As the developer, I leveraged my skills in API integration, database management, and full-stack web development to create a responsive and user-friendly interface, making it a comprehensive showcase of my abilities.",
+    github: "https://github.com/AnukratiMehta/hear-hear.git",
+    demo: "https://anukratimehta.github.io/hear-hear/"
   }
 ]
 
 const Projects = () => {
   return (
-    <section className='bg-navy lg:px-24' id='projects'>
+    <section className='bg-navy lg:my-[10%] lg:px-24' id='projects'>
       {
         data.map(({ id, image, title, github, demo, info }) => {
           return (
-            <div className='h-screen flex lg:px-auto flex-col justify-center items-center lg:flex-row' key={id}>
-              <div className='bg-light-navy w-3/4 h-fit rounded-lg'>
+            <div className='project h-screen flex lg:px-auto flex-col justify-center items-center lg:flex-row' key={id}>
+              <div className='bg-light-navy text-div w-3/4 h-fit lg:w-fit rounded-lg'>
                 <h1 className='text-center lg:text-2xl text-lg py-5 text-lightest-slate'>{title}</h1>
                 <p className='text-slate lg:text-lg text-sm px-5'>{info}</p>
                 <div className='flex flex-row justify-end p-2'>
@@ -58,8 +67,8 @@ const Projects = () => {
                   <a className="text-lightest-slate hover:text-green text-md lg:text-xl lg:m-3 m-2" href={demo} target="_blank" rel="noreferrer"><MdOutlineOpenInNew /></a>
                 </div>
               </div>
-              <a href={demo} target="_blank" rel="noreferrer" className='w-1/2 h-fit lg:w-auto lg:h-auto md:flex md:justify-center md:items-center'>
-                <img alt={title} className='object-scale-down lg:rounded-l-none lg:rounded-r lg:object-cover object-center rounded-b-lg' src={image} />
+              <a href={demo} target="_blank" rel="noreferrer" className='img-div  order-first w-1/2 h-fit lg:w-auto lg:h-auto md:flex md:justify-center md:items-center'>
+                <img alt={title} className='img-child object-scale-down lg:object-cover object-center rounded-t-lg hover:scale-105' src={image} />
               </a>
 
             </div>

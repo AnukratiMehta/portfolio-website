@@ -1,6 +1,6 @@
 import React from 'react';
 import Kaleidoscope from '../components/Kaleidoscope';
-import { SiJavascript, SiHtml5, SiCss3, SiReact, SiNpm, SiNodedotjs, SiNodemon, SiP5Dotjs, SiTailwindcss, SiExpress, SiMongodb, SiOpenapiinitiative, SiGit, SiGithub, SiBootstrap, SiJquery, SiSass, SiRedux, SiD3Dotjs, SiGnubash, SiPostgresql, SiMysql } from 'react-icons/si'
+import { SiVite, SiJavascript, SiHtml5, SiCss3, SiReact, SiNpm, SiNodedotjs, SiNodemon, SiP5Dotjs, SiTailwindcss, SiExpress, SiMongodb, SiOpenapiinitiative, SiGit, SiGithub, SiBootstrap, SiJquery, SiSass, SiRedux, SiD3Dotjs, SiGnubash, SiPostgresql, SiMysql } from 'react-icons/si'
 import { useEffect } from 'react';
 import $ from 'jquery';
 
@@ -15,11 +15,11 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id='skills' className='bg-navy lg:h-screen lg:flex lg:items-center lg:pt-12'>
-      <div className='hidden lg:h-screen lg:w-1/2 lg:flex lg:justify-center lg:items-center'>
+    <section id='skills' className='bg-navy lg:pl-[5%] lg:h-screen flex flex-col lg:flex-row lg:items-center lg:pt-12'>
+      <div className=' order-2 lg:order-1 h-screen lg:w-1/2 flex justify-center items-center'>
         <Kaleidoscope />
       </div>
-      <div className='h-screen lg:w-1/2 flex flex-col lg:justify-center justify-evenly items-center lg:mr-10 lg:pr-10 lg:-mt-10'>
+      <div className='order-1 lg:order-2 h-screen lg:w-1/2 flex flex-col lg:justify-center justify-evenly items-center lg:mr-10 lg:pr-10 lg:-mt-10'>
         <h1 className='lg:-mt-10 lg:mb-8 text-3xl lg:text-center text-lightest-slate'>Toolkit</h1>
         <div className='grid grid-cols-5 gap-10 md:gap-12 lg:gap-10'>
           <a href='https://www.javascript.com/' target="_blank" rel="noreferrer" data-hover="JavaScript" className="hovertext icon hover:scale-110"><SiJavascript className='text-green text-4xl ' /></a>
@@ -44,11 +44,10 @@ const Skills = () => {
           <a href='https://devdocs.io/bash/' data-hover="BASH" className="hoverleft icon hover:scale-110"><SiGnubash className='text-green text-4xl ' /></a>
           <a href='https://www.postgresql.org/' data-hover="PostgreSQL" className="hovertext icon hover:scale-110"><SiPostgresql className='text-green text-4xl ' /></a>
           <a href='https://www.mysql.com/' data-hover="MySQL" className="hovertext icon hover:scale-110"><SiMysql className='text-green text-4xl ' /></a>
+          <a href='https://vitejs.dev/' data-hover="Vite" className="hovertext icon hover:scale-110"><SiVite className='text-green text-4xl ' /></a>
+
         </div>
         <h1 className='lg:hidden text-xl text-lightest-slate px-[5%] md:px-[10%] text-center'>Experience some of these skills in action through an interactive display, just a scroll away.</h1>
-      </div>
-      <div className='h-screen flex justify-center items-center lg:hidden'>
-        <Kaleidoscope />
       </div>
     </section>
   )

@@ -20,7 +20,11 @@
   --yellow: #e8ff64;
 }
 
-#root {
+
+
+html,
+body {
+  overflow-x: hidden;
   background-color: #0a192f;
 }
 
@@ -174,4 +178,42 @@ input:-webkit-autofill:active {
 .hoverleft:hover:before {
   opacity: 1;
   visibility: visible;
+}
+
+@media only screen and (min-width: 1024px) {
+  .project:nth-child(odd) .img-div {
+    order: 2;
+  }
+
+  .project:nth-child(odd) .text-div {
+    order: 1;
+  }
+
+  .project:nth-child(even) .img-div {
+    order: 1;
+
+  }
+
+  .project:nth-child(even) .text-div {
+    order: 2;
+  }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .project:nth-child(even) .img-child {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .project:nth-child(odd) .img-child {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
 }

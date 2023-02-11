@@ -3,8 +3,8 @@ import Jigsaw from '../components/Jigsaw';
 
 const About = () => {
   return (
-    <section className=' bg-navy md:h-screen md:mb-20 md:grid md:grid-cols-2 md:justify-center md:content-center md:pl-10' id="about">
-      <div className='flex flex-col h-screen text-center justify-center'>
+    <section className='bg-navy md:h-screen  md:grid md:grid-cols-2 md:justify-center md:content-center md:pl-10' id="about">
+      <div className='my-[30%] md:my-0 flex flex-col h-screen text-center justify-center'>
         <div className='px-10 lg:pl-20 lg:pr-5'>
           <h1 className='text-3xl mb-10 md:mb-5 text-center text-lightest-slate'>About Me</h1>
           <p className='text-slate text-l text-left'>Welcome to my digital portfolio, I'm Anukrati Mehta - a web developer who transforms ideas into innovative products for the web. With a deep-seated passion for crafting dynamic user experiences, I utilize my expertise in front-end development to bring your vision to life.</p><br />
@@ -21,9 +21,9 @@ const About = () => {
           </button>
         </div>
       </div>
-      <div className='bg-navy md:-ml-10 lg:-ml-0 h-screen z-9 flex justify-evenly text-center items-center flex-col'>
+      <div className='bg-navy md:-ml-10  h-screen z-9 flex justify-evenly text-center items-center flex-col'>
         <Jigsaw />
-        <h1 className='md:hidden text-2xl text-lightest-slate'>If you liked the puzzle, you'll love my other <a href='#projects' className='text-green hover:underline'>projects.</a></h1>
+        <h1 className='px-[10%] text-center md:hidden text-2xl text-lightest-slate'>If you liked the puzzle, you'll love my other <a href='#projects' className='text-green hover:underline'>projects.</a></h1>
       </div>
     </section>
   )
