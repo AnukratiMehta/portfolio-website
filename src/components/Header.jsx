@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <div className={`flex items-center justify-between bg-navy px-2 py-3 z-20 fixed top-0 w-full ${headerClass}`}>
-      <a href="#home" className="text-xl px-2 hover:scale-110 md:text-xl md:px-4 md:py-2 text-green">Anukrati</a>
+      <a href="#home" className="text-xl px-2 hover:scale-110 md:text-xl md:px-4 md:py-2 text-slate hover:text-green">Anukrati</a>
       <nav>
         <section className="MOBILE-MENU flex md:hidden">
           <div
@@ -36,7 +36,7 @@ const Header = () => {
               onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
             >
               <svg
-                className="h-8 w-8 text-slate hover:text-dark-slate hover:cursor-pointer"
+                className="h-8 w-8 text-slate hover:text-blue hover:cursor-pointer"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"

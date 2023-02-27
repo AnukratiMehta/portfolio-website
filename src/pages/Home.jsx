@@ -12,7 +12,7 @@ const Home = () => {
         <CursorTrail />
       </div>
       <div className='h-screen flex flex-col justify-evenly items-center order-last md:order-first md:justify-center md:mb-20'>
-        <div className='w-1/2 lg:w-2/5 rounded-3xl' style={{ background: "linear-gradient(45deg, transparent, #64ffda, transparent)" }}>
+        <div className='w-1/2 lg:w-2/5 rounded-3xl' style={{ background: "linear-gradient(45deg, transparent, #63ecb5, transparent)" }}>
           <img src={Mine} alt="Anukrati Mehta" className="rounded-3xl overflow-hidden -rotate-12 hover:rotate-0" style={{ transition: 'all 400ms ease' }} />
         </div>
         <h1 className='md:hidden px-[5%] text-center text-2xl text-lightest-slate'>Building the web, one pixel at a time.</h1>
@@ -20,18 +20,18 @@ const Home = () => {
       <div className="flex flex-col h-screen text-center justify-evenly">
         <div className=''>
           <h1 className="my-1 md:my-2 lg:my-3 text-2xl  md:text-3xl  lg:text-4xl text-green">Hey there!</h1>
-          <h1 className="my-1 md:my-2 lg:my-3 text-2xl md:text-3xl lg:text-4xl text-lightest-slate">I'm Anukrati,</h1>
-          <h1 className="my-1 md:my-2 lg:my-3 text-3xl md:text-4xl lg:text-5xl text-slate">
-            <span className="typewriter inline-block">
+          <h1 className="my-1 md:my-2 lg:my-3 text-2xl md:text-3xl lg:text-4xl text-green">I'm Anukrati,</h1>
+          <h1 className="my-1 md:my-2 lg:my-3 text-3xl md:text-4xl lg:text-5xl">
+            <span className="typewriter inline-block text-slate">
               <Typewriter
                 options={{
-                  strings: ['Fullstack', 'Frontend', 'Backend', 'Web'],
+                  strings: ['MERN stack', 'Frontend', 'Web'],
                   autoStart: true,
                   loop: true,
                 }}
               />
             </span>
-            <span className="inline-block ml-1">Developer</span>
+            <span className="inline-block ml-1 text-green">Developer</span>
           </h1>
         </div>
         <div className='space-y-9 flex flex-col items-center md:flex md:flex-row md:justify-evenly md:space-y-0'>

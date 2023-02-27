@@ -33,10 +33,10 @@ const CursorTrail = () => {
           <React.Fragment key={index}>
             <defs>
               <linearGradient id={gradientId} x1={prevPosition.x} y1={prevPosition.y} x2={position.x} y2={position.y}>
-                <stop offset="0%" stopColor="#91BAD6" />
-                <stop offset="25%" stopColor="#73A5C6" />
-                <stop offset="75%" stopColor="#528AAE" />
-                <stop offset="100%" stopColor="#2E5984" />
+                <stop offset="0%" stopColor="#FFEA00" />
+                {/* <stop offset="25%" stopColor="#73A5C6" />
+                <stop offset="75%" stopColor="#528AAE" /> */}
+                <stop offset="100%" stopColor="#FCF55F" />
               </linearGradient>
             </defs>
             <line

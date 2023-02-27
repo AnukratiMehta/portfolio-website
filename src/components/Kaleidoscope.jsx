@@ -33,8 +33,8 @@ function Kaleidoscope() {
   }
 
   function handleYellow() {
-    setColor("#e8ff64");
-    p5Instance.stroke("#e8ff64");
+    setColor("#DFFF00");
+    p5Instance.stroke("#DFFF00");
   }
 
   function sketch(p) {
@@ -87,7 +87,7 @@ function Kaleidoscope() {
         <button onClick={handleReset} className="text-green border border-green rounded-md text-lg px-5 py-2.5 hover:text-green hover:bg-lightest-navy transition-all ease-in-out duration-200 cursor-pointer text-center mx-8">Reset</button>
       </div>
       <div className="kaleidoscope-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <div ref={canvasRef} style={{ border: '1px solid rgba(100, 255, 218, 0.102)', borderRadius: '5px', padding: '5px' }} />
+        <div ref={canvasRef} style={{ border: '3px solid rgba(73, 86, 112, 0.102)', borderRadius: '5px', padding: '5px' }} />
       </div>
       <div className='m-5' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <button
@@ -100,7 +100,7 @@ function Kaleidoscope() {
 
         <button
           onClick={handleYellow}
-          className={`text-green border border-green rounded-md text-lg px-5 py-2.5 hover:text-green hover:bg-lightest-navy transition-all ease-in-out duration-200 cursor-pointer text-center mx-3 ${color === "#e8ff64" ? "selected" : ""
+          className={`text-green border border-green rounded-md text-lg px-5 py-2.5 hover:text-green hover:bg-lightest-navy transition-all ease-in-out duration-200 cursor-pointer text-center mx-3 ${color === "#DFFF00" ? "selected" : ""
             }`}
         >
           Yellow

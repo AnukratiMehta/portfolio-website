@@ -1,18 +1,18 @@
 /* for the heading */
 .tag {
     text-align: center;
-    color: #ccd6f6;
+    color: #EC7063;
     margin: 1rem;
 }
 
 .congrats {
-    color: #64ffda;
+    color: #63ecb5;
 }
 
 
 /* for the jigsaw puzzle container */
 .jigsaw-puzzle {
-    border: 1px solid #64ffda;
+    border: 1px solid #63ecb5;
     margin: auto;
     box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.25);
     z-index: 10;
