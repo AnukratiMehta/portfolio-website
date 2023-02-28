@@ -1,12 +1,13 @@
 /* for the heading */
 .tag {
     text-align: center;
-    color: #EC7063;
+    /* color: #EC7063; */
+    color: #a8b2d1;
     margin: 1rem;
 }
 
 .congrats {
-    color: #63ecb5;
+    color: #64ffda;
 }
 
 

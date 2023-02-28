@@ -25,7 +25,7 @@ const Home = () => {
             <span className="typewriter inline-block text-slate">
               <Typewriter
                 options={{
-                  strings: ['MERN stack', 'Frontend', 'Web'],
+                  strings: ['MERN Stack', 'Frontend', 'Web'],
                   autoStart: true,
                   loop: true,
                 }}
