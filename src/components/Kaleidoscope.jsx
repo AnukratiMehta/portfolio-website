@@ -33,8 +33,8 @@ function Kaleidoscope() {
   }
 
   function handleYellow() {
-    setColor("#DFFF00");
-    p5Instance.stroke("#DFFF00");
+    setColor("#e8ff64");
+    p5Instance.stroke("#e8ff64");
   }
 
   function sketch(p) {
@@ -100,7 +100,7 @@ function Kaleidoscope() {
 
         <button
           onClick={handleYellow}
-          className={`text-green border border-green rounded-md text-lg px-5 py-2.5 hover:text-green hover:bg-lightest-navy transition-all ease-in-out duration-200 cursor-pointer text-center mx-3 ${color === "#DFFF00" ? "selected" : ""
+          className={`text-green border border-green rounded-md text-lg px-5 py-2.5 hover:text-green hover:bg-lightest-navy transition-all ease-in-out duration-200 cursor-pointer text-center mx-3 ${color === "#e8ff64" ? "selected" : ""
             }`}
         >
           Yellow

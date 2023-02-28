@@ -19,10 +19,10 @@ const Home = () => {
       </div>
       <div className="flex flex-col h-screen text-center justify-evenly">
         <div className=''>
-          <h1 className="my-1 md:my-2 lg:my-3 text-2xl  md:text-3xl  lg:text-4xl text-green">Hey there!</h1>
-          <h1 className="my-1 md:my-2 lg:my-3 text-2xl md:text-3xl lg:text-4xl text-green">I'm Anukrati,</h1>
+          <h1 className="my-1 md:my-2 lg:my-3 text-2xl  md:text-3xl  lg:text-4xl text-lightest-slate">Hey there!</h1>
+          <h1 className="my-1 md:my-2 lg:my-3 text-2xl md:text-3xl lg:text-4xl text-lightest-slate">I'm Anukrati,</h1>
           <h1 className="my-1 md:my-2 lg:my-3 text-3xl md:text-4xl lg:text-5xl">
-            <span className="typewriter inline-block text-slate">
+            <span className="typewriter inline-block text-green">
               <Typewriter
                 options={{
                   strings: ['MERN Stack', 'Frontend', 'Web'],
@@ -31,7 +31,7 @@ const Home = () => {
                 }}
               />
             </span>
-            <span className="inline-block ml-1 text-green">Developer</span>
+            <span className="inline-block ml-1 text-lightest-slate">Developer</span>
           </h1>
         </div>
         <div className='space-y-9 flex flex-col items-center md:flex md:flex-row md:justify-evenly md:space-y-0'>
