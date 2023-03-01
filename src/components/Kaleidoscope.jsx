@@ -115,11 +115,6 @@ function Kaleidoscope() {
         >
           Pink
         </button>
-
-
-
-
-
       </div>
     </div>
   );

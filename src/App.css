@@ -115,11 +115,6 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0px 1000px #233554 inset !important;
 }
 
-
-.heart {
-  color: #58cfb3;
-}
-
 .selected {
   background-color: #495670;
 }
