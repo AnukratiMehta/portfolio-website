@@ -49,7 +49,7 @@ function Kaleidoscope() {
 
       symmetry = 6;
       angle = 360 / symmetry;
-      p.createCanvas(p.windowWidth * 0.8, p.windowHeight * 0.8);
+      p.createCanvas(350, 350);
       p.angleMode(p.DEGREES);
       p.stroke(color);
 
@@ -84,7 +84,7 @@ function Kaleidoscope() {
     <div className='flex flex-col'>
       <div className='my-5' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <h1 className='text-2xl text-center text-lightest-slate ml-5'>Draw on Me ↓</h1>
-        <button onClick={handleReset} className="text-green border border-green rounded-md text-lg px-5 py-2.5 hover:text-green hover:bg-lightest-navy transition-all ease-in-out duration-200 cursor-pointer text-center mx-8">Reset</button>
+        <button onClick={handleReset} onTouchStart={handleReset} className="text-green border border-green rounded-md text-lg px-5 py-2.5 hover:text-green hover:bg-lightest-navy transition-all ease-in-out duration-200 cursor-pointer text-center mx-8">Reset</button>
       </div>
       <div className="kaleidoscope-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <div ref={canvasRef} style={{ border: '3px solid rgba(73, 86, 112, 0.102)', borderRadius: '5px', padding: '5px' }} />
@@ -92,6 +92,7 @@ function Kaleidoscope() {
       <div className='m-5' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <button
           onClick={handleBlue}
+          onTouchStart={handleBlue}
           className={`text-green border border-green rounded-md text-lg px-5 py-2.5 hover:text-green hover:bg-lightest-navy transition-all ease-in-out duration-200 cursor-pointer text-center mx-3 ${color === "#57cbff" ? "selected" : ""
             }`}
         >
@@ -100,6 +101,7 @@ function Kaleidoscope() {
 
         <button
           onClick={handleYellow}
+          onTouchStart={handleYellow}
           className={`text-green border border-green rounded-md text-lg px-5 py-2.5 hover:text-green hover:bg-lightest-navy transition-all ease-in-out duration-200 cursor-pointer text-center mx-3 ${color === "#e8ff64" ? "selected" : ""
             }`}
         >
@@ -107,6 +109,7 @@ function Kaleidoscope() {
         </button>
         <button
           onClick={handlePink}
+          onTouchStart={handlePink}
           className={`text-green border border-green rounded-md text-lg px-5 py-2.5 hover:text-green hover:bg-lightest-navy transition-all ease-in-out duration-200 cursor-pointer text-center mx-3 ${color === "#f57dff" ? "selected" : ""
             }`}
         >
