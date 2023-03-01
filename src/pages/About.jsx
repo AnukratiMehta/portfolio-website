@@ -17,7 +17,7 @@ const About = () => {
             className="text-green border border-green rounded-md text-lg md:px-3 px-5 py-2.5 hover:text-green hover:bg-lightest-navy transition-all ease-in-out duration-200 cursor-pointer text-center mt-10"
             onClick={() => window.location.href = "#contact"}
           >
-            Ready to connect?
+            Shall we talk?
           </button>
         </div>
       </div>

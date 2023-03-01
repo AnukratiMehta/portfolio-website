@@ -85,7 +85,7 @@ const Projects = () => {
               <div className='flex flex-row lg:flex-col p-2'>
                 <a title='Source code' className="text-lightest-slate hover:text-green text-md m-2 lg:text-xl lg:m-3" href={github} target="_blank" rel="noreferrer"><FiGithub /></a>
                 <a title='Live demo' className="text-lightest-slate hover:text-green text-md lg:text-xl lg:m-3 m-2" href={demo} target="_blank" rel="noreferrer"><MdOutlineOpenInNew /></a>
-                <a title='Project information' className="text-lightest-slate hover:text-green text-md m-2 lg:text-2xl lg:m-2 cursor-pointer" onClick={() => handleClick(id)}><MdReadMore /></a>
+                <p title='Project information' className="text-lightest-slate hover:text-green text-md m-2 lg:text-2xl lg:m-2 cursor-pointer" onClick={() => handleClick(id)}><MdReadMore /></p>
               </div>
             </div>
           )
@@ -96,21 +96,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-{/* <div className='flex-col justify-center items-center text-center'>
-                <h1 href={demo} target="_blank" rel="noreferrer" className='text-center text-3xl py-5 text-lightest-slate'>{title}</h1>
-                <div className='flex flex-row'>
-                  <div className='flex justify-center items-center bg-light-navy p-[4%] rounded-xl'>
-                    {showInfo[id] && showInfo[id] ? (
-                      <p className='text-slate max-w-md lg:text-lg text-sm px-5 text-justify'>{info}</p>)
-                      : (
-                        <img href={demo} target="_blank" rel="noreferrer" alt={title} className='max-w-md rounded-xl hover:scale-105 cursor-pointer' src={image} />)
-                    }
-                  </div>
-                </div>
-              </div>
-              <div className='flex flex-col justify-end p-2'>
-                <a className="text-lightest-slate hover:text-green text-md m-2 lg:text-xl lg:m-3" href={github} target="_blank" rel="noreferrer"><FiGithub /></a>
-                <a className="text-lightest-slate hover:text-green text-md lg:text-xl lg:m-3 m-2" href={demo} target="_blank" rel="noreferrer"><MdOutlineOpenInNew /></a>
-                <a className="text-lightest-slate hover:text-green text-md m-2 lg:text-2xl lg:m-2 cursor-pointer" onClick={() => handleClick(id)}><MdReadMore /></a>
-              </div> */}
