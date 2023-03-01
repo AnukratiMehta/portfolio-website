@@ -49,7 +49,7 @@ function Kaleidoscope() {
 
       symmetry = 6;
       angle = 360 / symmetry;
-      p.createCanvas(350, 350);
+      p.createCanvas(p.windowWidth * 0.8, p.windowHeight * 0.8);
       p.angleMode(p.DEGREES);
       p.stroke(color);
 

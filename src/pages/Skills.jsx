@@ -1,5 +1,5 @@
 import React from 'react';
-// import Kaleidoscope from '../components/Kaleidoscope';
+import Kaleidoscope from '../components/Kaleidoscope';
 import { SiVite, SiJavascript, SiHtml5, SiCss3, SiReact, SiNpm, SiNodedotjs, SiNodemon, SiP5Dotjs, SiTailwindcss, SiExpress, SiMongodb, SiOpenapiinitiative, SiGit, SiGithub, SiBootstrap, SiJquery, SiSass, SiRedux, SiD3Dotjs, SiGnubash, SiPostgresql, SiMysql } from 'react-icons/si'
 import { useEffect } from 'react';
 import $ from 'jquery';
@@ -17,7 +17,7 @@ const Skills = () => {
   return (
     <section id='skills' className='bg-navy lg:pl-[5%] lg:h-screen flex flex-col lg:flex-row lg:items-center lg:pt-12'>
       <div className=' order-2 lg:order-1 h-screen lg:w-1/2 flex justify-center items-center'>
-        {/* <Kaleidoscope /> */}
+        <Kaleidoscope />
       </div>
       <div className='order-1 lg:order-2 h-screen lg:w-1/2 flex flex-col lg:justify-center justify-evenly items-center lg:mr-10 lg:pr-10 lg:-mt-10'>
         <h1 className='lg:-mt-10 lg:mb-8 text-3xl lg:text-center text-lightest-slate'>Toolkit</h1>
