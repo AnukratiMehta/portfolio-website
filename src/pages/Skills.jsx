@@ -16,7 +16,7 @@ const Skills = () => {
 
   return (
     <section id='skills' className='bg-navy lg:pl-[5%] lg:h-screen flex flex-col lg:flex-row lg:items-center lg:pt-12'>
-      <div className=' hidden h-screen lg:w-1/2 lg:flex justify-center items-center'>
+      <div className=' order-2 lg:order-1 h-screen lg:w-1/2 flex justify-center items-center'>
         <Kaleidoscope />
       </div>
       <div className='order-1 lg:order-2 h-screen lg:w-1/2 flex flex-col lg:justify-center justify-evenly items-center lg:mr-10 lg:pr-10 lg:-mt-10'>
@@ -47,7 +47,7 @@ const Skills = () => {
           <a href='https://vitejs.dev/' data-hover="Vite" className="hovertext icon hover:scale-125"><SiVite className='text-green text-4xl ' /></a>
 
         </div>
-        {/* <h1 className='lg:hidden text-xl text-lightest-slate px-[5%] md:px-[10%] text-center'>Experience some of these skills in action through an interactive display, just a scroll away.</h1> */}
+        <h1 className='lg:hidden text-xl text-lightest-slate px-[5%] md:px-[10%] text-center'>Experience some of these skills in action through an interactive display, just a scroll away.</h1>
       </div>
     </section>
   )
