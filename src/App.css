@@ -180,3 +180,7 @@ input:-webkit-autofill:active {
   opacity: 1;
   visibility: visible;
 }
+
+.heart {
+  color: #58cfb3 !important;
+}
