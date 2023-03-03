@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <section className='bg-navy h-auto pt-5 pb-2'>
       <p className='text-center text-sm text-lightest-slate'>
-        Built with <span className="text-[#58cfb3]">&#10084;</span> by Anukrati Mehta
+        Built with <span className="text-[#70d5b5] text-base leading-5">&#10084;</span> by Anukrati Mehta
       </p>
       <div className="text-center">
         <a target="_blank" rel="noreferrer" href='https://github.com/AnukratiMehta/portfolio-website.git' className="text-sm px-4 text-lightest-slate hover:text-green">Source code</a>
