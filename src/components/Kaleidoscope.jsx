@@ -53,15 +53,16 @@ function Kaleidoscope() {
       p.stroke(color);
 
       setP5Instance(p);
-      
-      // Disable default touch behavior
-      let canvas = p5Instance.canvas;
-      canvas.addEventListener("touchstart", function (e) {
-        e.preventDefault();
-      }, { passive: false });
-      canvas.addEventListener("touchmove", function (e) {
-        e.preventDefault();
-      }, { passive: false });
+
+       // add touch event listener to canvas
+       p.touchStarted = function () {
+        if (p.mouseX > 0 && p.mouseX < p.width && p.mouseY > 0 && p.mouseY < p.height) {
+          p.mouseIsPressed = true;
+        }
+      };
+      p.touchEnded = function () {
+        p.mouseIsPressed = false;
+      };
       
     };
 
