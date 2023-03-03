@@ -43,7 +43,6 @@ function Kaleidoscope() {
 
     p.setup = function () {
       if (!sketchCreated) {
-        // new p5(sketch, canvasRef.current);
         sketchCreated = true;
       }
 
@@ -54,6 +53,16 @@ function Kaleidoscope() {
       p.stroke(color);
 
       setP5Instance(p);
+      
+      // Disable default touch behavior
+      let canvas = p5Instance.canvas;
+      canvas.addEventListener("touchstart", function (e) {
+        e.preventDefault();
+      }, { passive: false });
+      canvas.addEventListener("touchmove", function (e) {
+        e.preventDefault();
+      }, { passive: false });
+      
     };
 
 
