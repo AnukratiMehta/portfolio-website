@@ -54,15 +54,10 @@ function Kaleidoscope() {
 
       setP5Instance(p);
 
-       // add touch event listener to canvas
-       p.touchStarted = function () {
-        if (p.mouseX > 0 && p.mouseX < p.width && p.mouseY > 0 && p.mouseY < p.height) {
-          p.mouseIsPressed = true;
-        }
-      };
-      p.touchEnded = function () {
-        p.mouseIsPressed = false;
-      };
+       // Add touchmove event listener to prevent screen scrolling
+      p.canvas.addEventListener('touchmove', function (event) {
+        event.preventDefault();
+      }, { passive: false });
       
     };
 
