@@ -18,30 +18,13 @@ import { MdReadMore } from 'react-icons/md'
 
 const data = [
   {
-    id: 1,
-    video: VID1,
-    poster: IMG1,
-    info: "A feature-rich calculator built using Javascript that showcases my ability to implement complex functionality using a user-friendly interface. The calculator performs basic arithmetic operations, including addition, subtraction, multiplication, and division, and is designed to be highly responsive and adaptable. It features two screens: one for making new calculations and another for displaying previous calculations. In developing this calculator, I took a user-centered approach, ensuring that the interface was easy to use and understand, and had the same familiar appeal as the physical calculator we used growing up.",
-    github: "https://github.com/AnukratiMehta/calculator.git",
-    demo: "https://anukratimehta.github.io/calculator/"
-  },
-  {
-    id: 2,
-    video: VID2,
-    poster: IMG2,
-    title: "Tic-Tac-Toe",
-    info: "A fun and interactive Tic-Tac-Toe game developed using Javascript. The game features a visually appealing and user-friendly interface, allowing players to enjoy the classic game with a modern twist. As the developer, I utilized my skills in Javascript, HTML, and CSS to create the game logic and implement user interaction for an engaging experience. The project showcases my ability to build dynamic web applications and bring traditional games to life in a digital format.",
-    github: "https://github.com/AnukratiMehta/tic-tac-toe.git",
-    demo: "https://anukratimehta.github.io/tic-tac-toe/"
-  },
-  {
-    id: 3,
-    video: VID3,
-    poster: IMG3,
-    title: "SQL Visualization",
-    info: "The project involved extracting and cleaning data from a SQL database using advanced techniques, then analyzing it to generate meaningful insights. My proficiency in writing complex SQL queries and manipulating data is displayed, along with my ability to communicate these insights through Tableau visualizations. This project highlights my skills in SQL and data analysis, and my capacity to drive better business outcomes with data-driven insights.",
-    github: "https://github.com/AnukratiMehta/Open-Defecation-Practices.git",
-    demo: "https://public.tableau.com/shared/R47H8953Y?:display_count=n&:origin=viz_share_link"
+    id: 5,
+    video: VID5,
+    poster: IMG5,
+    title: "Music App",
+    info: "The Hear, Hear! App is a dynamic platform for music discovery and listening, integrating the free Shazam API to fetch music information. With features like a music player, related songs, and songs by a particular artist, users can easily explore and enjoy their favorite music. As the developer, I leveraged my skills in API integration, database management, and full-stack web development to create a responsive and user-friendly interface, making it a comprehensive showcase of my abilities.",
+    github: "https://github.com/AnukratiMehta/hear-hear.git",
+    demo: "https://anukratimehta.github.io/hear-hear/"
   },
   {
     id: 4,
@@ -53,14 +36,33 @@ const data = [
     demo: "https://anukratimehta.github.io/ai-image-generation/"
   },
   {
-    id: 5,
-    video: VID5,
-    poster: IMG5,
-    title: "Music App",
-    info: "The Hear, Hear! App is a dynamic platform for music discovery and listening, integrating the free Shazam API to fetch music information. With features like a music player, related songs, and songs by a particular artist, users can easily explore and enjoy their favorite music. As the developer, I leveraged my skills in API integration, database management, and full-stack web development to create a responsive and user-friendly interface, making it a comprehensive showcase of my abilities.",
-    github: "https://github.com/AnukratiMehta/hear-hear.git",
-    demo: "https://anukratimehta.github.io/hear-hear/"
-  }
+    id: 3,
+    video: VID3,
+    poster: IMG3,
+    title: "SQL Visualization",
+    info: "The project involved extracting and cleaning data from a SQL database using advanced techniques, then analyzing it to generate meaningful insights. My proficiency in writing complex SQL queries and manipulating data is displayed, along with my ability to communicate these insights through Tableau visualizations. This project highlights my skills in SQL and data analysis, and my capacity to drive better business outcomes with data-driven insights.",
+    github: "https://github.com/AnukratiMehta/Open-Defecation-Practices.git",
+    demo: "https://public.tableau.com/shared/R47H8953Y?:display_count=n&:origin=viz_share_link"
+  },
+  {
+    id: 2,
+    video: VID2,
+    poster: IMG2,
+    title: "Tic-Tac-Toe",
+    info: "A fun and interactive Tic-Tac-Toe game developed using Javascript. The game features a visually appealing and user-friendly interface, allowing players to enjoy the classic game with a modern twist. As the developer, I utilized my skills in Javascript, HTML, and CSS to create the game logic and implement user interaction for an engaging experience. The project showcases my ability to build dynamic web applications and bring traditional games to life in a digital format.",
+    github: "https://github.com/AnukratiMehta/tic-tac-toe.git",
+    demo: "https://anukratimehta.github.io/tic-tac-toe/"
+  },
+  {
+    id: 1,
+    video: VID1,
+    poster: IMG1,
+    info: "A feature-rich calculator built using Javascript that showcases my ability to implement complex functionality using a user-friendly interface. The calculator performs basic arithmetic operations, including addition, subtraction, multiplication, and division, and is designed to be highly responsive and adaptable. It features two screens: one for making new calculations and another for displaying previous calculations. In developing this calculator, I took a user-centered approach, ensuring that the interface was easy to use and understand, and had the same familiar appeal as the physical calculator we used growing up.",
+    github: "https://github.com/AnukratiMehta/calculator.git",
+    demo: "https://anukratimehta.github.io/calculator/"
+  },
+
+  
 ]
 
 const Projects = () => {
