@@ -181,3 +181,6 @@ input:-webkit-autofill:active {
   visibility: visible;
 }
 
+.heart {
+  color: #58cfb3
+}
