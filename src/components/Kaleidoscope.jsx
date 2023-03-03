@@ -43,7 +43,7 @@ function Kaleidoscope() {
 
     p.setup = function () {
       if (!sketchCreated) {
-        new p5(sketch, canvasRef.current);
+        // new p5(sketch, canvasRef.current);
         sketchCreated = true;
       }
 
