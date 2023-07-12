@@ -58,6 +58,7 @@ const data = [
     video: VID1,
     poster: IMG1,
     info: "A feature-rich calculator built using Javascript that showcases my ability to implement complex functionality using a user-friendly interface. The calculator performs basic arithmetic operations, including addition, subtraction, multiplication, and division, and is designed to be highly responsive and adaptable. It features two screens: one for making new calculations and another for displaying previous calculations. In developing this calculator, I took a user-centered approach, ensuring that the interface was easy to use and understand, and had the same familiar appeal as the physical calculator we used growing up.",
+    title: "Calculator",
     github: "https://github.com/AnukratiMehta/calculator.git",
     demo: "https://anukratimehta.github.io/calculator/"
   },
@@ -78,7 +79,7 @@ const Projects = () => {
       {
         data.map(({ id, image, video, poster, title, github, demo, info }) => {
           return (
-            <div className='h-screen flex px-auto  flex-col lg:flex-row justify-center items-center lg:items-end' key={id}>
+            <div className='h-screen flex px-auto  flex-col lg:flex-row justify-center items-center' key={id}>
               <div className='flex-col justify-center items-center text-center'>
 
                 <h1 className='text-center text-3xl py-5 text-lightest-slate hover:text-green'><a href={demo} target="_blank" rel="noreferrer">{title}</a></h1>

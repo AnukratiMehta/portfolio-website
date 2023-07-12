@@ -56,6 +56,9 @@ const Header = () => {
                 <a href="#skills">Skills</a>
               </li>
               <li className="text-lightest-slate hover:text-green text-xl my-2">
+                <a href="#experience">Experience</a>
+              </li>
+              <li className="text-lightest-slate hover:text-green text-xl my-2">
                 <a href="#projects">Projects</a>
               </li>
               <li className="text-lightest-slate hover:text-green text-xl my-2">
@@ -70,6 +73,9 @@ const Header = () => {
           </li>
           <li>
             <a href="#skills" className="md:text-lg md:px-4 text-lightest-slate hover:text-green">Skills</a>
+          </li>
+          <li>
+            <a href="#experience" className="md:text-lg md:px-4 text-lightest-slate hover:text-green">Experience</a>
           </li>
           <li>
             <a href="#projects" className="md:text-lg md:px-4 text-lightest-slate hover:text-green">Projects</a>
