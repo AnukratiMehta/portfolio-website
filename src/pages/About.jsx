@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className='bg-navy md:h-screen  md:grid md:grid-cols-2 md:justify-center md:content-center md:pl-10' id="about">
       <div className='my-[30%] md:my-0 flex flex-col h-screen text-center justify-center'>
-        <div className='px-10 lg:pl-20 lg:pr-5'>
+        <div className='px-10 lg:pl-20'>
           <h1 className='text-3xl mb-10 md:mb-5 text-center text-lightest-slate'>About Me</h1>
           <p className='text-slate text-l text-left'>Welcome to my digital portfolio, I'm Anukrati Mehta - a web developer who transforms ideas into innovative products for the web. With a deep-seated passion for crafting dynamic user experiences, I utilize my expertise in front-end development to bring your vision to life.</p><br />
           <p className='text-slate text-l text-left'>As a well-organized and enterprising individual, I have a knack for finding creative solutions to complex problems. My attention to detail ensures that every aspect of a project is executed with precision.</p><br />
