@@ -1,6 +1,6 @@
 import React from 'react';
 import Kaleidoscope from '../components/Kaleidoscope';
-import { SiVite, SiJavascript, SiHtml5, SiCss3, SiReact, SiNpm, SiNodedotjs, SiNodemon, SiP5Dotjs, SiTailwindcss, SiExpress, SiMongodb, SiOpenapiinitiative, SiGit, SiGithub, SiBootstrap, SiJquery, SiSass, SiRedux, SiD3Dotjs, SiGnubash, SiPostgresql, SiMysql, SiIonic } from 'react-icons/si'
+import { SiVite, SiJavascript, SiTypescript, SiHtml5, SiCss3, SiReact, SiNpm, SiNodedotjs, SiNodemon, SiP5Dotjs, SiTailwindcss, SiExpress, SiMongodb, SiOpenapiinitiative, SiGit, SiGithub, SiBootstrap, SiJquery, SiSass, SiRedux, SiD3Dotjs, SiGnubash, SiPostgresql, SiMysql, SiIonic } from 'react-icons/si'
 import { useEffect } from 'react';
 import $ from 'jquery';
 
@@ -46,7 +46,7 @@ const Skills = () => {
           <a href='https://www.mysql.com/' data-hover="MySQL" className="hovertext icon hover:scale-125"><SiMysql className='text-green text-4xl ' /></a>
           <a href='https://vitejs.dev/' data-hover="Vite" className="hovertext icon hover:scale-125"><SiVite className='text-green text-4xl ' /></a>
           <a href='https://ionicframework.com/' data-hover="Ionic" className="hovertext icon hover:scale-125"><SiIonic className='text-green text-4xl ' /></a>
-
+          <a href='https://www.typescriptlang.org/' data-hover="TypeScript" className="hovertext icon hover:scale-125"><SiTypescript className='text-green text-4xl ' /></a>
         </div>
         <h1 className='lg:hidden text-xl text-lightest-slate px-[5%] md:px-[10%] text-center'>Experience some of these skills in action through an interactive display, just a scroll away.</h1>
       </div>
