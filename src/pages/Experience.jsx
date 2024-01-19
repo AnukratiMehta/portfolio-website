@@ -1,6 +1,8 @@
 import React from 'react';
 import IMG1 from '../assets/Probooking.png'
 import VID1 from '../assets/Probooking.webm'
+import IMG2 from '../assets/astonish.png'
+import VID2 from '../assets/astonish.mp4'
 
 import { useState } from 'react';
 
@@ -8,6 +10,14 @@ import { MdOutlineOpenInNew } from 'react-icons/md'
 import { MdReadMore } from 'react-icons/md'
 
 const data = [
+  {
+    id: 2,
+    video: VID2,
+    poster: IMG2,
+    info: "Spearheaded the development and launch of AstonishChem.com, a cutting-edge platform for revolutionizing the Stone (Granite & Marble) processing industry.<br /><br />Implemented a robust backend using Node.js, ensuring seamless data flow and efficient server-side operations.<br /><br />Crafted a modern and user-friendly frontend using React, providing an engaging and intuitive user experience.<br /><br />Utilized TypeScript for enhanced code readability, maintainability, and improved collaboration in a team environment.<br /><br />Designed the website's aesthetic with Tailwind CSS, ensuring a visually appealing and consistent user interface.<br /><br />Successfully deployed and hosted the website on GoDaddy.com, ensuring reliable and scalable performance.",
+    title: "Astonish Chemicals Pvt Ltd",
+    demo: "https://astonishchem.com/"
+  },
   {
     id: 1,
     video: VID1,
