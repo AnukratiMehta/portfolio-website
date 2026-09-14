@@ -6,20 +6,11 @@ The portfolio reflects my current transition into cybersecurity following a Firs
 
 ## Portfolio Highlights
 
-- MSc cybersecurity research on deepfake detection and digital evidence reliability
-- Professional website and frontend development experience
-- Selected software, AI, and data projects
-- Cybersecurity, technical, and software development skills
-- Interactive elements built with React and p5.js
-
-## Built With
-
-- React
-- JavaScript
-- Tailwind CSS
-- p5.js
-- React Icons
-- Typewriter Effect
+* MSc cybersecurity research on deepfake detection and digital evidence reliability
+* Professional website and frontend development experience
+* Selected software, AI, and data projects
+* Cybersecurity, technical, and software development skills
+* Interactive portfolio elements and project demonstrations
 
 ## Run Locally
 
@@ -57,9 +48,9 @@ http://localhost:3000
 
 **Anukrati Mehta**
 
-- LinkedIn: https://www.linkedin.com/in/anukrati-mehta/
-- GitHub: https://github.com/AnukratiMehta
-- Email: anukratimehta@gmail.com
+* LinkedIn: https://www.linkedin.com/in/anukrati-mehta/
+* GitHub: https://github.com/AnukratiMehta
+* Email: [anukratimehta@gmail.com](mailto:anukratimehta@gmail.com)
 
 ## Source
 
