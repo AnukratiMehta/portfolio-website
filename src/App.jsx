@@ -17,13 +17,13 @@ const App = () => {
       <Socials />
       <Home />
       <About />
-      <Skills />
-      <Experience />
       <Projects />
+      <Experience />
+      <Skills />
       <Contact />
       <Footer />
     </>
   )
 }
 
-export default App
+export default App;

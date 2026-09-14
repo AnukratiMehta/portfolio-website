@@ -1,42 +1,59 @@
-import React from 'react'
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Header = () => {
   const [headerClass, setHeaderClass] = useState('');
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    const handleScroll = () => {
       if (window.scrollY > 0) {
         setHeaderClass('header-shadow');
       } else {
         setHeaderClass('');
       }
-    });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
-  const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+  const closeMobileMenu = () => {
+    setIsNavOpen(false);
+  };
 
   return (
-    <div className={`flex items-center justify-between bg-navy px-2 py-3 z-20 fixed top-0 w-full ${headerClass}`}>
-      <a href="#home" className="text-xl px-2 hover:scale-110 md:text-xl md:px-4 md:py-2 text-green">Anukrati</a>
+    <div
+      className={`flex items-center justify-between bg-navy px-2 py-3 z-20 fixed top-0 w-full ${headerClass}`}
+    >
+      <a
+        href="#home"
+        className="text-xl px-2 hover:scale-110 md:text-xl md:px-4 md:py-2 text-green"
+      >
+        Anukrati
+      </a>
+
       <nav>
+        {/* Mobile Menu */}
         <section className="MOBILE-MENU flex md:hidden">
           <div
             className="HAMBURGER-ICON space-y-2 hover:cursor-pointer"
-            onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
+            onClick={() => setIsNavOpen((prev) => !prev)}
           >
             <span className="block h-0.5 w-8 bg-slate"></span>
             <span className="block h-0.5 w-6 ml-2 bg-slate"></span>
             <span className="block h-0.5 w-4 ml-4 bg-slate"></span>
           </div>
 
-          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+          <div className={isNavOpen ? 'showMenuNav' : 'hideMenuNav'}>
             <div
               className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
-              onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
+              onClick={closeMobileMenu}
             >
               <svg
-                className="h-8 w-8 text-slate hover:text-blue hover:cursor-pointer"
+                className="h-8 w-8 text-slate hover:text-green hover:cursor-pointer"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -48,44 +65,91 @@ const Header = () => {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
+
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-evenly">
               <li className="text-lightest-slate hover:text-green text-xl my-2">
-                <a href="#about">About</a>
+                <a href="#about" onClick={closeMobileMenu}>
+                  About
+                </a>
               </li>
+
               <li className="text-lightest-slate hover:text-green text-xl my-2">
-                <a href="#skills">Skills</a>
+                <a href="#projects" onClick={closeMobileMenu}>
+                  Projects
+                </a>
               </li>
+
               <li className="text-lightest-slate hover:text-green text-xl my-2">
-                <a href="#experience">Experience</a>
+                <a href="#experience" onClick={closeMobileMenu}>
+                  Experience
+                </a>
               </li>
+
               <li className="text-lightest-slate hover:text-green text-xl my-2">
-                <a href="#projects">Projects</a>
+                <a href="#skills" onClick={closeMobileMenu}>
+                  Skills
+                </a>
               </li>
+
               <li className="text-lightest-slate hover:text-green text-xl my-2">
-                <a href="#contact">Contact</a>
+                <a href="#contact" onClick={closeMobileMenu}>
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
         </section>
+
+        {/* Desktop Menu */}
         <ul className="DESKTOP-MENU hidden md:flex">
           <li>
-            <a href="#about" className="md:text-lg md:px-4 text-lightest-slate hover:text-green">About</a>
+            <a
+              href="#about"
+              className="md:text-lg md:px-4 text-lightest-slate hover:text-green"
+            >
+              About
+            </a>
           </li>
+
           <li>
-            <a href="#skills" className="md:text-lg md:px-4 text-lightest-slate hover:text-green">Skills</a>
+            <a
+              href="#projects"
+              className="md:text-lg md:px-4 text-lightest-slate hover:text-green"
+            >
+              Projects
+            </a>
           </li>
+
           <li>
-            <a href="#experience" className="md:text-lg md:px-4 text-lightest-slate hover:text-green">Experience</a>
+            <a
+              href="#experience"
+              className="md:text-lg md:px-4 text-lightest-slate hover:text-green"
+            >
+              Experience
+            </a>
           </li>
+
           <li>
-            <a href="#projects" className="md:text-lg md:px-4 text-lightest-slate hover:text-green">Projects</a>
+            <a
+              href="#skills"
+              className="md:text-lg md:px-4 text-lightest-slate hover:text-green"
+            >
+              Skills
+            </a>
           </li>
+
           <li>
-            <a href="#contact" className="md:text-lg md:px-4 md:pr-10 text-lightest-slate hover:text-green">Contact</a>          </li>
+            <a
+              href="#contact"
+              className="md:text-lg md:px-4 md:pr-10 text-lightest-slate hover:text-green"
+            >
+              Contact
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
   );
-}
+};
 
-export default Header
+export default Header;
