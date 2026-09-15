@@ -13,22 +13,22 @@ const securitySkills = [
   'AI/ML Security',
 ];
 
-const technicalSkills = [
-  'Linux',
-  'Python',
-  'Git',
-  'GitHub',
+const programmingSkills = [
+  'Java',
+  'JavaScript',
+  'TypeScript',
   'SQL',
 ];
 
 const developmentSkills = [
   'React',
-  'TypeScript',
-  'JavaScript',
   'Node.js',
   'HTML',
   'CSS',
   'Tailwind CSS',
+  'Linux',
+  'Git',
+  'GitHub',
 ];
 
 const SkillGroup = ({ title, skills }) => (
@@ -54,13 +54,13 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="bg-navy min-h-screen lg:pl-[5%] flex flex-col lg:flex-row lg:items-center lg:py-16"
+      className="bg-navy min-h-screen px-6 py-24 lg:px-[5%] lg:flex lg:items-center"
     >
-      <div className="order-2 lg:order-1 min-h-screen lg:min-h-0 lg:w-1/2 flex justify-center items-center">
+      <div className="lg:w-1/2 flex justify-center items-center mb-16 lg:mb-0">
         <Kaleidoscope />
       </div>
 
-      <div className="order-1 lg:order-2 min-h-screen lg:min-h-0 lg:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-8 lg:pr-20 py-20">
+      <div className="lg:w-1/2 flex flex-col justify-center px-2 md:px-10 lg:px-8 lg:pr-20">
         <h1 className="text-3xl text-lightest-slate mb-4">
           Skills
         </h1>
@@ -77,12 +77,12 @@ const Skills = () => {
           />
 
           <SkillGroup
-            title="Technical"
-            skills={technicalSkills}
+            title="Programming"
+            skills={programmingSkills}
           />
 
           <SkillGroup
-            title="Software Development"
+            title="Development & Tools"
             skills={developmentSkills}
           />
         </div>
